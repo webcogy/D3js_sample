@@ -1,6 +1,10 @@
 # D3js
 
-https://www.dashingd3js.com/d3-tutorial
+#### 데이터 시각화 라이브러리 (주로 차트에 이용)
+
+- svg + jQuery 체이닝문법
+
+참고 사이트 : https://www.dashingd3js.com/d3-tutorial
 
 ```
 // 기본 svg
