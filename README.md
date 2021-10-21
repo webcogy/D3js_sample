@@ -1,6 +1,6 @@
-# D3js
+# D3js (Data Driven Documents)
 
-#### 데이터 시각화 라이브러리 (주로 차트에 이용)
+#### 데이터 시각화 라이브러리 (차트에 이용)
 
 - svg + jQuery 체이닝문법
 
