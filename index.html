@@ -133,10 +133,36 @@
                             } else if (d === 110) { returnColor = "red"; }
                             return returnColor;
                         });
- */
-// 다음 튜토리얼 => https://www.dashingd3js.com/d3-tutorial/data-structures-d3-js-accepts
+*/
+        // [11] 튜토리얼 최종 => 동적 데이터로 화면에 차트 그리기
+        var jsonCircles = [
+            {"x_axis":  30, "y_axis":  30, "radius": 20, "color" :  "green"},
+            {"x_axis":  70, "y_axis":  70, "radius": 20, "color" : "purple"},
+            {"x_axis": 110, "y_axis": 100, "radius": 20, "color" :    "red"}
+        ];
+        var svgContainer = d3.select("body").append("svg")
+                .attr("width", 200)
+                .attr("height", 200);
 
-
+        var circles = svgContainer.selectAll("circle")
+                .data(jsonCircles)
+                .enter()
+                .append("circle")
+                .attr('cx', function(d){
+                    return d.x_axis
+                })
+                .attr('cy', function(d){
+                    return d.y_axis
+                })
+                .attr('r', function(d){
+                    return d.radius
+                })
+                .text(function (d,i){
+                    return d.color
+                })
+                .style('fill', function(d){
+                    return d.color
+                })
         })();
     </script>
 

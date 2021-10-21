@@ -4,7 +4,8 @@
 
 - svg + jQuery 체이닝문법
 
-참고 사이트 : https://www.dashingd3js.com/d3-tutorial
+- 참고 사이트 : https://www.dashingd3js.com/d3-tutorial
+- 한글 래퍼런스 : https://github.com/zziuni/d3/wiki/API-Reference
 
 ```
 // 기본 svg
